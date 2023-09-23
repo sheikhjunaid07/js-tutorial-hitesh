@@ -1,3 +1,5 @@
+/**********************Conversions***********************/
+
 let value = "32avf";
 let data = 32;
 
@@ -7,7 +9,6 @@ console.log(data);
 console.log(typeof(data));
 console.log("-------------------------------");
 
-//conversion 
 let changedValue = Number(value)
 console.log(changedValue);      //output - NaN
 console.log(typeof(changedValue));   //output - number
@@ -30,3 +31,7 @@ let ChangedBooleon = Number(bool)
 console.log(ChangedBooleon);     //output - 1
 console.log(typeof(ChangedBooleon));   //output - number
 console.log("-------------------------------");
+
+
+/**********************Operations***********************/
+
