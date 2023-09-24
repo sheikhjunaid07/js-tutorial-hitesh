@@ -1,5 +1,3 @@
-/**********************Conversions***********************/
-
 let value = "32avf";
 let data = 32;
 
@@ -32,6 +30,10 @@ console.log(ChangedBooleon);     //output - 1
 console.log(typeof(ChangedBooleon));   //output - number
 console.log("-------------------------------");
 
+console.log(1 + 2);      //output - 3
+console.log("1" + 2);    //output - 12
+console.log(1 + "2");    //output - 12
+console.log("1" + 2 + 2);   //output - 122
+console.log(1 + 2 + "2");   //output - 32
 
-/**********************Operations***********************/
 
