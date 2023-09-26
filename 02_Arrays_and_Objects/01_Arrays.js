@@ -29,4 +29,19 @@ console.log(array.includes(55));    //true
 console.log(array.includes(60));    //false
 
 //check index no. by value
-console.log(array.indexOf(22));
+console.log(array.indexOf(33));  //2
+
+//Adds all the elements of an array into a string
+const newArray = array.join()
+console.log(array);     //[11, 22, 33, 44, 55, 66, 77 ]
+console.log(newArray);  //11,22,33,44,55,66,77
+console.log(typeof(newArray));  //string
+
+//slice (slice don't change in original array)
+const arr1 = array.slice(0, 2)  //don't include 2nd range 
+console.log(arr1);     //[ 11, 22 ]
+console.log(array);    //[11, 22, 33, 44, 55, 66, 77 ]
+//splice (slice change in original array)
+const arr2 = array.splice(0, 3)  //include second range
+console.log(arr2);    //[ 11, 22, 33 ]
+console.log(array);   //[ 44, 55, 66, 77 ]
