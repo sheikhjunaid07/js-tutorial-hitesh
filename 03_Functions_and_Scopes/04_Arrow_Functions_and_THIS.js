@@ -20,12 +20,12 @@ console.log(this); // name: 'Parvez', office: 'Hydrabad', welcomeMessege: [Funct
 //basic Arrow Function
 const addNumbers = (num1, num2) => {
   return num1 + num2;
-}
-console.log(addNumbers(4,6));  //10
+};
+console.log(addNumbers(4, 6)); //10
 
-//Implicit return 
+//Implicit return
 //(othertype to write arrow function). if your statement have only one line you can write this
-const add = (num1, num2) => num1 + num2 
-const multiply = (num1, num2) => (num1 * num2)   //bot are same
-console.log(add(7,3));   //10
-console.log(multiply(7,3));   //21
+const add = (num1, num2) => num1 + num2;
+const multiply = (num1, num2) => num1 * num2; //bot are same
+console.log(add(7, 3)); //10
+console.log(multiply(7, 3)); //21
