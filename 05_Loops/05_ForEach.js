@@ -1,6 +1,6 @@
-//forEach accept a callback function as a parameter. because it's a callback function that's why function have no name
+//ForEach - forEach accept a callback function as a parameter. because it's a callback function that's why function have no name
 
-const week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+const week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] 
 
 //with normal function
 week.forEach(function (item) {
