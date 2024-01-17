@@ -5,6 +5,7 @@ function one() {
   console.log("Normal Function!!");
 }
 one(); //Normal Function!!
+
 //if you made your function IIFE you can simply bound your function inside parenthesis
 (function two() {
   console.log("IIFE Function");
