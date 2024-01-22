@@ -1,0 +1,8 @@
+console.log(window);
+console.log(window.document);
+console.log(document); 2 and 3 both are same
+console.dir(document); for see other details
+document.getElementById("firstHeading")
+
+document.getElementById("firstHeading").innerHTML = "<h1>Sheikh Junaid</h1>"
+'<h1>Sheikh Junaid</h1>'
