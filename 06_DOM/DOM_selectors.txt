@@ -1,8 +1,35 @@
-console.log(window);
-console.log(window.document);
-console.log(document); 2 and 3 both are same
-console.dir(document); for see other details
-document.getElementById("firstHeading")
+//store selector in variable
+const title = document.getElementById("title");
 
-document.getElementById("firstHeading").innerHTML = "<h1>Sheikh Junaid</h1>"
-'<h1>Sheikh Junaid</h1>'
+//for Styling
+title.style.backgroundColor = "blue"
+title.style.padding = '20px'
+title.style.margin = "10px"
+title.style.border = "white"
+title.style.border = "10px"
+title.style.borderRadius = "20px"
+
+title.innerHTML
+title.innerText
+title.textContent
+
+//query selector
+document.querySelector('h1')
+document.querySelectorAll('h1')
+
+document.querySelector('#title')  //to select id(#)
+<h1 id=​"title" class=​"heading">​Learning DOM from basic to advanced​</h1>​
+
+document.querySelector('.heading') //to select class(.)
+<h1 id=​"title" class=​"heading">​Learning DOM from basic to advanced​</h1>​
+
+//to select password
+document.querySelector('input[type=password]')
+document.querySelector("ul")
+const myul = document.querySelector("ul")
+document.querySelector("li")
+const turnGreen = document.querySelector("li")
+turnGreen.style.backgroundColor = "green"
+
+//from converting into array 
+Array.from(jise convert krna he)
