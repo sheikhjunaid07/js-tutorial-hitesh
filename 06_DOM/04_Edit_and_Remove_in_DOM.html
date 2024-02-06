@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit - Remove in DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+    <p class="paragraph">Junaid</p>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("React");
+
+    //Other Optimize way
+    function OptimizeWay(Name) {
+      const p = document.createElement("p");
+      p.appendChild(document.createTextNode(Name));
+      document.querySelector(".paragraph").appendChild(p);
+    }
+    OptimizeWay("Indore");
+
+    //Edit
+    const editLang = document.querySelector("li:nth-child(2)");
+    const newLang = document.createElement("li");
+    newLang.textContent = "Java";
+    editLang.replaceWith(newLang);
+
+    //another example on edit DOM
+    const replaceJS = document.querySelector("li:first-child");
+    const newTS = document.createElement("li");
+    newTS.textContent = "TypeScript";
+    replaceJS.replaceWith(newTS);
+
+    //edit using outerHTML
+    const usingOuter = document.querySelector("li:first-child");
+    usingOuter.outerHTML = "<li>React Native</li>";
+
+    //remove
+    const removeLang = document.querySelector("li:last-child");
+    removeLang.remove();
+
+    const removePara = document.querySelector("p:first-child");
+    removePara.remove();
+  </script>
+</html>

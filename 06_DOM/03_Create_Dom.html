@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create DOM Element</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main"; //create class
+    div.id = Math.round(Math.random() * 10 + 1); //Dynamically generate id using math.random(), round is used to clear decimal no. in id
+
+    //set attributes
+    div.setAttribute("title", "Chai or Code");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+
+    //to write inside div
+    div.innerHTML = "Sheikh Junaid ";
+
+    //directly write inside div using document object
+    const addText = document.createTextNode("Indore");
+    div.appendChild(addText);
+
+    //to add element to DOM or show to browser
+    document.body.appendChild(div);
+  </script>
+</html>
