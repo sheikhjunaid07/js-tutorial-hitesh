@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout</title>
+  </head>
+  <body>
+    <h1>Junaid</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    //execute function inside setTimeout function
+    setTimeout(() => {
+      console.log("Junaid");
+    }, 2000);
+
+    //given function reference
+    const printCity = () => {
+      console.log("Indore");
+    };
+    setTimeout(printCity, 3000);
+
+    //change text on screen
+    const changeName = () => {
+      document.querySelector("h1").innerHTML = "Sheikh Junaid";
+    };
+
+    const change = setTimeout(changeName, 3000);
+
+    //stop setTimeout function on a specific time before executing using clearTimeout()
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(change);
+      console.log("Stopped setTimeout function");
+    });
+  </script>
+</html>
