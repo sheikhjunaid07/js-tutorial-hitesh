@@ -1,5 +1,0 @@
-//map
-
-//filter
-
-//reduce
